@@ -4,19 +4,12 @@ import './App.css';
 import Header from './compount/header/header.component';
 
 
-
-class App extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
-  render() {
-    return (
-      <div className="App">
-        <Header />
-      </div>
-    )
-  }
+const App = (props) => {
+  return (
+    <div className="App">
+        <Header fixed="top" />
+    </div>
+  )
 };
 
 export default App;
