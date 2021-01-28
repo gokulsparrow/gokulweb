@@ -1,15 +1,28 @@
 import React from 'react';
+
+import { BrowserRouter as Router } from 'react-router-dom';
+
+import About from '../src/compount/about/about';
+import Home from '../src/compount/home/home';
+
 import './App.css';
 
-import Header from './compount/header/header.component';
+import Navbar from '../src/compount/header/header';
+
 
 
 const App = (props) => {
-  return (
-    <div className="App">
-        <Header fixed="top" />
-    </div>
-  )
+    return (
+        <div className="App">
+            <Router>
+                <Navbar />
+                <Home id="home" />
+                <About id="about" />
+            </Router>
+        </div>
+    )
 };
 
 export default App;
+
+
