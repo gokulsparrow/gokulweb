@@ -59,7 +59,7 @@ export default function Navbar() {
                         </li>
                         <li className='nav-item'>
                             <Link
-                                to='/projects'
+                                to='projects'
                                 activeClass="active" spy={true} smooth={true} duration={1000}
                                 className='nav-links'
                                 onClick={closeMobileMenu}
