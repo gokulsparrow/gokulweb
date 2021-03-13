@@ -6,7 +6,7 @@ const NavbarStyled = styled.div`
     position: fixed;
     width: 100%;
     .header {
-        background: black;
+        background: black; 
         padding: 40px;
         display: flex;
         justify-content: space-around;

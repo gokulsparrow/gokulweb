@@ -9,7 +9,7 @@ const StyledFooter = styled.footer`
     background-color: black;
     color: white;
     text-align: center;
-    padding: 2vh;
+    padding: 3vh;
     float: left;
     
     a {
