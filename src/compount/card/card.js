@@ -1,17 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-import './card.style.css';
+const Toggle = () => {
+  const [on, setOn] = useState(true);
 
-//import gokul from "../../asserts/gokul.jpg";
-
-
-const card = () => {
-    return (
-        <div className='card'>
-            {/* <img src={gokul} alt='gokul' /> */}
-            <h2 className='ttt'>hello</h2>
-        </div>
-    )
+  return (
+    <button onClick={() => setOn(!on)}>{ on ? 'ON' : 'OFF' }</button>
+  );
 }
 
-export default card;
+export default Toggle;

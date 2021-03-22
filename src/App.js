@@ -7,6 +7,8 @@ import Home from '../src/pages/home/home';
 import Footer from "../src/pages/footer/footer.component";
 import Projets from '../src/pages/projects/projects';
 
+
+
 import './App.css';
 
 import Navbar from '../src/compount/header/header';

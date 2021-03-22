@@ -1,30 +1,34 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import '../projects/projects.style.css';
 
-import styled from 'styled-components';
+import { Card, Content } from "./projectCss";
 
 
-const Box = styled.div({
-    background: 'palevioletred',
-    height: '50px',
-    width: '50px'
-});
 
-const projects = (props) => {
+//import styled from 'styled-components';
+
+
+function Projects() {
+
+    // const [ datas ] = useState([
+    //     "projetname",
+    //     "project detail",
+    //     "projectlink"
+    // ])
+
     return (
         <div className='projects'>
             <h2>projects</h2>
-            <div>
-                <Box>
-                    <div>hello</div>
-                    <div>hello</div>
-                    <div>hello</div>
-                    <div>hello</div>
-                </Box>
-            </div>
+            {/* <Card>
+                <Content>
+                    
+                </Content>
+            </Card> */}
+
+            
         </div>
     )
 }
 
-export default projects;
+export default Projects;
