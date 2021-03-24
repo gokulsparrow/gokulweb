@@ -24,7 +24,7 @@ const about = () => {
                     <div className='cardb'>
                         <h3>About Me</h3>
                         <p className='ptext'>
-                            I'am a self taught web developer from a mechanical engineering background with some git hub open source project experiance.And changeing my carrear from mechanical to web developering because of passion.(Looking for a job in organished team cultural company to share my ideas and to learn more about web developering.
+                            I'am a self taught web developer from a mechanical engineering background with HTML, CSS, JAVASCRIPT, React.js, bootstrap project experiance.And changeing my carrear from mechanical to web developering because of passion.(Looking for a job in organished team cultural company to share my ideas and to learn more about web developering.
                             And changeing my carrear from mechanical to web developering because of passion.(Looking for a job in organished team cultural company to share my ideas and to learn more about web developering.
                         </p>
                     </div>

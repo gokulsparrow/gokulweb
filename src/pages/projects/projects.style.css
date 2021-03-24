@@ -1,11 +1,109 @@
 .projects {
-    background: url('../../asserts/bricknormal.jpg');
+    background: radial-gradient(circle, rgba(255,255,255,0.5861695019804797) 0%, rgba(255,255,255,0.5553571770505077) 100%), url('../../asserts/backproject.jpg');
     width: 100%;
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
-    color: white;
+    color: black;
     text-align: center;
     justify-content: center;
+    padding-top: 100px;
 }
+
+.row {
+    display: flex;
+  flex-flow: row wrap;
+  align-content: space-between;
+  justify-content: space-between;
+}
+
+.card1 {
+    margin: 100px;
+    width: 300px;
+    height: 400px;
+    background-color: black;
+    color: white;
+    border-radius: 25px;
+}
+
+.projectpic1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    border-radius: 25px 25px 0px 0px;
+}
+
+@media screen and (max-width: 700px) {
+    .projects {
+        height: 250vh;
+    }
+}
+
+.seperate1 {
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.sepsub1 {
+    margin-top: 10px;
+}
+
+.seperate2 {
+    margin-top: 10px;
+}
+
+.sepsub2 {
+    margin-bottom: 90px;
+    margin-top: 10px
+}
+
+.sepsub3 {
+    margin-bottom: 50px;
+    margin-top: 10px
+}
+
+/* button css */
+
+.rainbow{
+    background-color: white;
+    border-radius: 4px;  
+    color: black;
+    cursor: pointer;
+    padding: 8px 16px;
+    text-decoration: none;
+
+}
+
+.rainbow-5:hover{
+    background-image:     linear-gradient(
+       to right, 
+       #E7484F,
+       #E7484F 16.65%,
+       #F68B1D 16.65%,
+       #F68B1D 33.3%,
+       #FCED00 33.3%,
+       #FCED00 49.95%,
+       #009E4F 49.95%,
+       #009E4F 66.6%,
+       #00AAC3 66.6%,
+       #00AAC3 83.25%,
+       #732982 83.25%,
+       #732982 100%,
+       #E7484F 100%
+      
+      
+      
+     );
+   animation:slidebg 2s linear infinite;
+}
+
+@keyframes slidebg {
+    to {
+      background-position:20vw;
+    }
+}
+
+/* new button */
+
