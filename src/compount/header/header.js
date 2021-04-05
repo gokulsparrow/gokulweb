@@ -34,51 +34,51 @@ export default function Navbar() {
             <NavbarStyled>
                 <nav className='navbar'>
                     <div className='navbar-container'>
-                        <Link to='home' activeClass="active" className='navbar-logo' spy={true} smooth={true} duration={1000} onClick={closeMobileMenu}>
-                            Gokul
-                            <i class='fab fa-typo3' />
-                        </Link>
-                    <div className='menu-icon' onClick={handleClick}>
-                        <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
-                    </div>
-                    <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-                        <li className='nav-item'>
-                            <Link to='about' activeClass="active" className='nav-links' spy={true} smooth={true} duration={1000} onClick={closeMobileMenu}>
-                                About
+                            <Link to='home' activeClass="active" className='navbar-logo' spy={true} smooth={true} duration={1000} onClick={closeMobileMenu}>
+                                Gokul
+                                <i class='fab fa-typo3' />
                             </Link>
-                        </li>
-                        <li className='nav-item'>
-                            <Link
-                                to='/timeline'
-                                activeClass="active" spy={true} smooth={true} duration={1000}
-                                className='nav-links'
-                                onClick={closeMobileMenu}
-                            >
-                                Timeline
-                            </Link>
-                        </li>
-                        <li className='nav-item'>
-                            <Link
-                                to='projects'
-                                activeClass="active" spy={true} smooth={true} duration={1000}
-                                className='nav-links'
-                                onClick={closeMobileMenu}
-                            >
-                                Projects
-                            </Link>
-                        </li>
+                        <div className='menu-icon' onClick={handleClick}>
+                            <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
+                        </div>
+                        <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+                            <li className='nav-item'>
+                                <Link to='about' activeClass="active" className='nav-links' spy={true} smooth={true} duration={1000} onClick={closeMobileMenu}>
+                                    About
+                                </Link>
+                            </li>
+                            <li className='nav-item'>
+                                <Link
+                                    to='/timeline'
+                                    activeClass="active" spy={true} smooth={true} duration={1000}
+                                    className='nav-links'
+                                    onClick={closeMobileMenu}
+                                >
+                                    Timeline
+                                </Link>
+                            </li>
+                            <li className='nav-item'>
+                                <Link
+                                    to='projects'
+                                    activeClass="active" spy={true} smooth={true} duration={1000}
+                                    className='nav-links'
+                                    onClick={closeMobileMenu}
+                                >
+                                    Projects
+                                </Link>
+                            </li>
 
-                        <li>
-                            <Link
-                                to='/conduct'
-                                className='nav-links-mobile'
-                                onClick={closeMobileMenu}
-                            >
-                                Conduct
-                            </Link>
-                        </li>
-                    </ul>
-                        {button && <Button buttonStyle='btn--outline'>Conduct</Button>}
+                            <li>
+                                <Link
+                                    to='resume'
+                                    className='nav-links-mobile'
+                                    onClick={closeMobileMenu}
+                                >
+                                    Resume
+                                </Link>
+                            </li>
+                        </ul>
+                            {button && <Button buttonStyle='btn--outline'>Resume</Button>}
                     </div>
                 </nav>
             </NavbarStyled>

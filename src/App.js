@@ -7,6 +7,8 @@ import Home from '../src/pages/home/home';
 import Footer from "../src/pages/footer/footer.component";
 import Projets from '../src/pages/projects/projects';
 
+import Resume from '../src/pages/resume/resume';
+
 
 
 import './App.css';
@@ -19,7 +21,9 @@ const App = (props) => {
     return (
         <div className="App">
             <Router>
-                <Navbar />
+                <Navbar>
+                    <Resume id="resume" />
+                </Navbar>
                 <Home id="home" />
                 <About id="about" />
                 <Projets id='projets' />
