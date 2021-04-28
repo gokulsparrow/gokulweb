@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from '../button/button';
+
+//import Resume from '../../pages/resume/resume';
 //import { Link } from 'react-router-dom';
+
+import gk from '../../asserts/gokul.jpg';
 
 import { Link } from 'react-scroll';
 
@@ -15,6 +19,9 @@ export default function Navbar() {
 
     const handleClick = () => setClick(!click);
     const closeMobileMenu = () => setClick(false);
+
+    const resumePage = () => setClick(!click);
+    const pageClose = () => setClick(false);
 
     const showButton = () => {
         if (window.innerWidth <= 960) {
@@ -71,6 +78,7 @@ export default function Navbar() {
                             <li>
                                 <Link
                                     to='resume'
+                                    activeClass="active" spy={true} smooth={true} duration={1000}
                                     className='nav-links-mobile'
                                     onClick={closeMobileMenu}
                                 >
@@ -78,7 +86,11 @@ export default function Navbar() {
                                 </Link>
                             </li>
                         </ul>
-                            {button && <Button buttonStyle='btn--outline'>Resume</Button>}
+                        {button && <Button buttonStyle='btn--outline' onClick={resumePage} className={click ? 'fas fa-times' : 'hiddens'}>Resume</Button>}
+                        <div onClick={pageClose} activeClass="active" spy={true} smooth={true} duration={1000} className='resumeouter'>
+                            <img src={gk} alt='goodpic' className='resumepart' />
+                        </div>
+                            
                     </div>
                 </nav>
             </NavbarStyled>

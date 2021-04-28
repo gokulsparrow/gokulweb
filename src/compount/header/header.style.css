@@ -156,3 +156,21 @@
       transition: 250ms;
     }
   }
+
+.resumeouter {
+  width: 100px;
+  height: 300px;
+  margin-top: 300px;
+}
+
+.hiddens {
+  display: none;
+}
+
+.resumepart {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 230%;
+  border-radius: 20px;
+}  
