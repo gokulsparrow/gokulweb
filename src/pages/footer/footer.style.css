@@ -11,9 +11,10 @@
     cursor: pointer;
     width: 40px;
     height: 40px;
-    border:2px solid #ddd; /* add border to the buttons */
+    border:2px solid white; /* add border to the buttons */
     box-shadow: 0 3px 3px #999;
     padding: 0px;
+    margin-right: 10px;
     text-decoration: none;
     text-align: center;
     color: #fff;
@@ -65,7 +66,7 @@
 
 .googleplusBtn:before{
       font-family: "FontAwesome";
-      content: "\f0d5"; /* add googleplus icon */
+      content: "\f0e0"; /* add googleplus icon */
 }
 
 .googleplusBtn:hover{
@@ -90,51 +91,19 @@
       border-color: #0094BC;
 }
 
-/* pinterest button class*/
-.pinterestBtn{
-    background: #cb2027;
+/* git button class*/
+.gitBtn{
+    background: rgb(204, 4, 204);
 }
 
-.pinterestBtn:before{
+.gitBtn:before{
       font-family: "FontAwesome";
-      content: "\f0d2"; /* add pinterest icon */
+      content: "\f09b"; /* add rss icon */
 }
 
-.pinterestBtn:hover{
-      color: #cb2027;
+.gitBtn:hover{
+      color: rgb(204, 4, 204);
       background: #fff;
-      border-color: #cb2027;
-}
-
-/* tumblr button class*/
-.tumblrBtn{
-    background: #3a5876;
-}
-
-.tumblrBtn:before{
-      font-family: "FontAwesome";
-      content: "\f173"; /* add tumblr icon */
-}
-
-.tumblrBtn:hover{
-      color: #3a5876;
-      background: #fff;
-      border-color: #3a5876;
-}
-
-/* rss button class*/
-.rssBtn{
-    background: #e88845;
-}
-
-.rssBtn:before{
-      font-family: "FontAwesome";
-      content: "\f09e"; /* add rss icon */
-}
-
-.rssBtn:hover{
-      color: #e88845;
-      background: #fff;
-      border-color: #e88845;
+      border-color: rgb(204, 4, 204);
 }
 
