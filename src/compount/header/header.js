@@ -86,9 +86,21 @@ export default function Navbar() {
                                 </Link>
                             </li>
                         </ul>
-                        {button && <Button buttonStyle='btn--outline' onClick={resumePage} className={click ? 'fas fa-times' : 'hiddens'}>Resume</Button>}
-                        <div onClick={pageClose} activeClass="active" spy={true} smooth={true} duration={1000} className='resumeouter'>
-                            <img src={gk} alt='goodpic' className='resumepart' />
+                        {button && <Button buttonStyle='btn--outline' className='wrapper' href='#demo-modal'>Resume</Button>}
+                        <div id="demo-modal" class="modal">
+                            <div className="modal__content">
+                                <h1>CSS Only Modal</h1>
+
+                                <p>
+                                    You can use the :target pseudo-className to create a modals with Zero JavaScript. Enjoy!
+                                </p>
+
+                                <div className="modal__footer">
+                                    Made with <i className="fa fa-heart hellollo"></i>, by <a href="https://twitter.com/denicmarko" target="_blank">@denicmarko</a>
+                                </div>
+
+                                <a href="#" className="modal__close hello">&times;</a>
+                            </div>
                         </div>
                             
                     </div>
@@ -97,3 +109,10 @@ export default function Navbar() {
         </div>
     )
 }
+
+
+
+// {button && <Button buttonStyle='btn--outline' onClick={resumePage} className={click ? 'fas fa-times' : 'hiddens'}>Resume</Button>}
+// <div onClick={pageClose} activeClass="active" spy={true} smooth={true} duration={1000} className='resumeouter'>
+//     <img src={gk} alt='goodpic' className='resumepart' />
+// </div>

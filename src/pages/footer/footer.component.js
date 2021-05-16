@@ -11,7 +11,7 @@ const Footer = (props) => {
             <StyledFooter>
                 <div id="social">
                     <a className="facebookBtn smGlobalBtn" href="#" ></a>
-                    <a className="twitterBtn smGlobalBtn" href="#" ></a>
+                    <a className="twitterBtn smGlobalBtn" href="https://twitter.com/gkgokul006" ></a>
                     <a className="googleplusBtn smGlobalBtn" href="gokulgk008@gmail.com" ></a>
                     <a className="linkedinBtn smGlobalBtn" href="https://www.linkedin.com/in/gokul-s-871214179/" ></a>
                     <a className="gitBtn smGlobalBtn" href="https://github.com/gokulsparrow" ></a>
